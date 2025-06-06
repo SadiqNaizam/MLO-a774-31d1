@@ -27,7 +27,6 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({
   isLoggedIn = false,
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  console.log("Rendering NavigationMenu. Cart items:", cartItemCount, "Logged in:", isLoggedIn);
 
   const renderNavLinks = (isMobile: boolean = false) => (
     navItems.map((item) => (
