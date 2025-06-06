@@ -72,7 +72,6 @@ const ProfilePage = () => {
   const [isAddressDialogOpen, setIsAddressDialogOpen] = useState(false);
   const [editingAddress, setEditingAddress] = useState<AddressFormData | null>(null);
   
-  console.log('ProfilePage loaded');
 
   const activeTab = searchParams.get('tab') || 'orders';
   const setActiveTab = (tab: string) => {
